@@ -22,7 +22,7 @@ bio: |
 
 affiliations:
   - name: Northeastern University - Silicon Valley
-    url: https://www.northeastern.edu/
+    url: https://siliconvalley.northeastern.edu/
 
 links:
   - icon: at-symbol
@@ -32,7 +32,7 @@ links:
     url: https://github.com/parvpatodia
     label: GitHub
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/parvpatodia/
+    url: https://www.linkedin.com/in/parvpatodia-ai-silicon-valley/
     label: LinkedIn
 
 interests:
@@ -51,7 +51,7 @@ education:
     summary: |
       Focus on federated learning, ML systems architecture, and AI applications.
       Coursework: Algorithms, Machine Learning, Foundations of AI, Software Development.
-      GPA: 3.8+
+      GPA: 3.85
 
   - degree: Bachelor's in Mechanical Engineering (Minor in Computing & Data Analysis)
     institution: Nanyang Technological University, Singapore
@@ -174,9 +174,9 @@ languages:
   - name: English
     level: 5
     label: Native
-  - name: Mandarin Chinese
-    level: 3
-    label: Conversational
+  - name: Hindi
+    level: 5
+    label: Fluent
 
 awards:
   - title: Excellent Performance Award
