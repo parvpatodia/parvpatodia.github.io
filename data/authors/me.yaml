@@ -88,13 +88,6 @@ experience:
       Drafted automation solution roadmaps with emphasis on Mobile Industrial Robots (MiR) and Industry 4.0.
       Coordinated with technology partners to assess workflows and implementation feasibility for global clients.
 
-  - role: Master's Student - AI Research & Development
-    org: Northeastern University - Silicon Valley
-    start: 2025-09-01
-    summary: |
-      Building full-stack AI systems combining machine learning, backend APIs, and frontend interfaces.
-      Federated learning framework for distributed model training on non-IID datasets.
-      Medical equipment tracking system (Meditrack) with computer vision and semantic understanding.
 
 skills:
   - name: Programming Languages
