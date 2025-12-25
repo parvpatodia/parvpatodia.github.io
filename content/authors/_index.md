@@ -47,7 +47,7 @@ social:
     link: 'mailto:patodia.pa@northeastern.edu'
   - icon: github
     icon_pack: fab
-    link: https://github.com/parv
+    link: https://github.com/parvpatodia
   - icon: linkedin
     icon_pack: fab
     link: https://linkedin.com/in/parvpatodia
