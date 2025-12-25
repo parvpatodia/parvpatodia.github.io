@@ -43,6 +43,6 @@ url_video: ""
 ---
 
 **Key Research Highlights:**
-* [cite_start]Built a physics-informed neural network (PINN) for torque estimation in a PMSM, using forward propagation with ReLU activation[cite: 27].
-* [cite_start]Developed a real-time telemetry acquisition system in MATLAB (RS-485), parsing and visualizing multi-frame data streams[cite: 28].
-* [cite_start]Built a GUI to display streaming signals and store historical logs, enabling faster fault detection and issue triage[cite: 29].
+*Built a physics-informed neural network (PINN) for torque estimation in a PMSM, using forward propagation with ReLU activation[cite: 27].
+*Developed a real-time telemetry acquisition system in MATLAB (RS-485), parsing and visualizing multi-frame data streams[cite: 28].
+*Built a GUI to display streaming signals and store historical logs, enabling faster fault detection and issue triage[cite: 29].
