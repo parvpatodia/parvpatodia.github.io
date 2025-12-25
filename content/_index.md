@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-date: 2022-10-24
+date: 2024-05-01
 type: landing
 
 design:
@@ -9,41 +9,93 @@ design:
   spacing: '6rem'
 
 sections:
+  # 1. BIO & EDUCATION SECTION
   - block: resume-biography-3
+    # This ID allows the "Bio" tab to scroll here (if linked)
+    id: about
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
-      username: me
+      # CRITICAL FIX: This must match the folder name in content/authors/
+      username: admin
       text: ''
-      # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
         url: uploads/Resume-Parv_Summer_2026.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
           enable: true
-
-      # Name heading sizing to accommodate long or short names
-      name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        size: medium
+        shape: circle
+
+  # 2. EXPERIENCE SECTION
+  - block: experience
+    # This ID allows the "Experience" tab to scroll here
+    id: experience
+    content:
+      title: Experience
+      # Date format usually matches what you put in the content files
+      date_format: Jan 2006
+    design:
+      columns: '2'
+
+  # 3. PROJECTS SECTION
+  - block: portfolio
+    # This ID allows the "Projects" tab to scroll here
+    id: projects
+    content:
+      title: Projects
+      filters:
+        # This tells Hugo to pull content from content/project/
+        folders:
+          - project
+      # Show all projects
+      count: 0
+      offset: 0
+      order: desc
+    design:
+      # Options: card, landscape, masonry
+      view: card
+      columns: '2'
+      flip_alt_rows: false
+
+  # 4. RESEARCH / PAPERS SECTION
+  - block: collection
+    # This ID allows the "Papers" tab to scroll here
+    id: publications
+    content:
+      title: Featured Publications
+      filters:
+        # This tells Hugo to pull content from content/publications/
+        folders:
+          - publications
+        featured_only: false
+    design:
+      view: citation
+      columns: '2'
+
+  # 5. CONTACT SECTION
+  - block: contact
+    id: contact
+    content:
+      title: Contact
+      subtitle:
+      text: |
+        I am currently looking for internship opportunities in AI/ML and Robotics.
+      email: patodia.pa@northeastern.edu
+      address:
+        city: San Jose
+        region: CA
+        country: United States
+    design:
+      columns: '2'
+
   - block: markdown
     content:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        My research focuses on building practical AI systems that solve real-world problems. I work on three main areas: developing ways for multiple computers to learn together without sharing raw data (federated learning), improving how AI models understand and respond to human language more accurately, and creating tools that monitor equipment health before it breaks. Currently, I'm exploring how to make these systems work better with less computing power and less information loss. My goal is to bridge the gap between what researchers develop in labs and what businesses actually need—creating systems that are faster, more reliable, and easier to deploy.
 
         Please reach out to collaborate 😃
     design:
@@ -69,62 +121,4 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
-  - block: cta-card
-    demo: true # Only display this section in the Hugo Blox Builder demo site
-    content:
-      title: 👉 Build your own academic website like this
-      text: |-
-        This site is generated by Hugo Blox Builder - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
-
-        <a class="github-button" href="https://github.com/HugoBlox/hugo-blox-builder" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/hugo-blox-builder on GitHub">Star</a>
-
-        Easily build anything with blocks - no-code required!
-
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
-    design:
-      card:
-        # Card background color (CSS class)
-        css_class: 'bg-primary-300 dark:bg-primary-700'
-        css_style: ''
 ---
