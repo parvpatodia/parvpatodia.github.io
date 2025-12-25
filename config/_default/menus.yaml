@@ -1,5 +1,4 @@
-menu:
-  main:
+main:
     - name: Bio
       url: '#about'
       weight: 10
