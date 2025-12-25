@@ -1,4 +1,4 @@
-menus:
+menu:
   main:
     - name: Bio
       url: '#about'
