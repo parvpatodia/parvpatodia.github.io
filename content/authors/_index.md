@@ -35,10 +35,10 @@ education:
   courses:
     - course: Master's in Artificial Intelligence
       institution: Northeastern University, San Jose, CA
-      [cite_start]year: 2025 — 2027 (Expected) # Updated duration [cite: 10]
+      year: 2025 — 2027 (Expected)
     - course: Bachelor's in Mechanical Engineering (Minor in Computing & Data Analysis)
       institution: Nanyang Technological University, Singapore
-      [cite_start]year: 2020 — 2024 # Updated duration [cite: 13]
+      year: 2020 — 2024
 
 # Social/Academic Networking
 social:
