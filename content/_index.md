@@ -69,18 +69,16 @@ sections:
       columns: '2'
 
   # 5. CONTACT SECTION
-  - block: contact
+  - block: markdown
     id: contact
     content:
       title: Contact
-      subtitle:
       text: |
         I am currently looking for internship opportunities in AI/ML and Robotics.
-      email: patodia.pa@northeastern.edu
-      address:
-        city: San Jose
-        region: CA
-        country: United States
+        
+        **Email:** [patodia.pa@northeastern.edu](mailto:patodia.pa@northeastern.edu)
+        
+        **Location:** San Jose, CA, United States
     design:
       columns: '2'
 
