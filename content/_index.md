@@ -40,24 +40,18 @@ sections:
       columns: '2'
 
   # 3. PROJECTS SECTION
-  - block: portfolio
+  - block: collection
     # This ID allows the "Projects" tab to scroll here
     id: projects
     content:
       title: Projects
       filters:
-        # This tells Hugo to pull content from content/project/
+        # This tells Hugo to pull content from content/projects/
         folders:
-          - project
-      # Show all projects
-      count: 0
-      offset: 0
-      order: desc
+          - projects
     design:
-      # Options: card, landscape, masonry
-      view: card
+      view: article-grid
       columns: '2'
-      flip_alt_rows: false
 
   # 4. RESEARCH / PAPERS SECTION
   - block: collection
